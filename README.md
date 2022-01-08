@@ -5,7 +5,7 @@ We tackle the problem of customer outage forecasting by integrating distributed 
 # Data Descsription
 Customer outage data consists of a time series of customers without power reported every 15 minutes by utility companies across NYS counties. It was collected over the period of 2015–2018. The weather data is an hourly multivariate time series of temperature, precipitation, gust, wind, and wind direction from NYS Mesonet stations. The data spans over the period of 2016–2017.The customer outage data, weather data, and some leaf area index (LAI) data are merged and resampled hourly to form an hourly county-level multivariate time series within a period of two years (2016–2017), with customer outages as the target variable and weather time series as predictor variables.
 
-We provide some code and a small sample data (Nassau County) for demonstrating the impementation of all the time series methods used in our work. The code is build in Jupyter Notebook environment provided by Google and can be accessed directly in Google Colab. See the following [website](https://colab.research.google.com/) for instructions on using Google Colab.
+We provide some code and a small sample data (Nassau County) for demonstrating the impementation of some of the time series methods used in our work. The code is build in Jupyter Notebook environment provided by Google and can be accessed directly in Google Colab. See the following [website](https://colab.research.google.com/) for instructions on using Google Colab.
 
 
 # Time Series Methods
