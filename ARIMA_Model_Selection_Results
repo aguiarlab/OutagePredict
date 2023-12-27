@@ -1,0 +1,45 @@
+Performing stepwise search to minimize aic
+ ARIMA(2,0,2)(0,0,0)[0] intercept   : AIC=-57869.355, Time=7.96 sec
+ ARIMA(0,0,0)(0,0,0)[0] intercept   : AIC=-10370.727, Time=3.56 sec
+ ARIMA(1,0,0)(0,0,0)[0] intercept   : AIC=-49198.271, Time=3.77 sec
+ ARIMA(0,0,1)(0,0,0)[0] intercept   : AIC=-21967.443, Time=6.93 sec
+ ARIMA(0,0,0)(0,0,0)[0]             : AIC=13878.358, Time=1.59 sec
+ ARIMA(1,0,2)(0,0,0)[0] intercept   : AIC=-56867.490, Time=5.04 sec
+ ARIMA(2,0,1)(0,0,0)[0] intercept   : AIC=-57921.008, Time=4.34 sec
+ ARIMA(1,0,1)(0,0,0)[0] intercept   : AIC=-54948.108, Time=6.30 sec
+ ARIMA(2,0,0)(0,0,0)[0] intercept   : AIC=-57887.577, Time=4.28 sec
+ ARIMA(3,0,1)(0,0,0)[0] intercept   : AIC=-57820.847, Time=3.15 sec
+ ARIMA(3,0,0)(0,0,0)[0] intercept   : AIC=-57925.300, Time=4.17 sec
+ ARIMA(4,0,0)(0,0,0)[0] intercept   : AIC=-57925.649, Time=4.27 sec
+ ARIMA(5,0,0)(0,0,0)[0] intercept   : AIC=-57958.569, Time=3.70 sec
+ ARIMA(5,0,1)(0,0,0)[0] intercept   : AIC=-57918.149, Time=3.40 sec
+ ARIMA(4,0,1)(0,0,0)[0] intercept   : AIC=-57827.908, Time=3.29 sec
+ ARIMA(5,0,0)(0,0,0)[0]             : AIC=-57173.705, Time=2.19 sec
+
+Best model:  ARIMA(5,0,0)(0,0,0)[0] intercept
+Total fit time: 67.984 seconds
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                      y   No. Observations:                13984
+Model:               SARIMAX(5, 0, 0)   Log Likelihood               28986.285
+Date:                Wed, 27 Dec 2023   AIC                         -57958.569
+Time:                        20:38:23   BIC                         -57905.749
+Sample:                             0   HQIC                        -57940.984
+                              - 13984                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept      0.0195      0.001     26.766      0.000       0.018       0.021
+ar.L1          1.5908      0.007    222.914      0.000       1.577       1.605
+ar.L2         -0.5997      0.013    -46.196      0.000      -0.625      -0.574
+ar.L3         -0.0026      0.014     -0.189      0.850      -0.030       0.024
+ar.L4         -0.0924      0.014     -6.819      0.000      -0.119      -0.066
+ar.L5          0.0499      0.007      6.730      0.000       0.035       0.064
+sigma2         0.0009   8.73e-06    106.138      0.000       0.001       0.001
+===================================================================================
+Ljung-Box (L1) (Q):                   0.59   Jarque-Bera (JB):              1937.59
+Prob(Q):                              0.44   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.51   Skew:                            -0.01
+Prob(H) (two-sided):                  0.00   Kurtosis:                         4.82
+===================================================================================
