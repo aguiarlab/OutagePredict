@@ -1,0 +1,43 @@
+Performing stepwise search to minimize aic
+ ARIMA(2,1,2)(0,0,0)[0] intercept   : AIC=-48348.797, Time=2.53 sec
+ ARIMA(0,1,0)(0,0,0)[0] intercept   : AIC=-48978.306, Time=1.79 sec
+ ARIMA(1,1,0)(0,0,0)[0] intercept   : AIC=-56774.328, Time=2.79 sec
+ ARIMA(0,1,1)(0,0,0)[0] intercept   : AIC=-54697.676, Time=2.78 sec
+ ARIMA(0,1,0)(0,0,0)[0]             : AIC=-48980.304, Time=0.34 sec
+ ARIMA(2,1,0)(0,0,0)[0] intercept   : AIC=-56782.938, Time=2.42 sec
+ ARIMA(3,1,0)(0,0,0)[0] intercept   : AIC=-56843.282, Time=2.96 sec
+ ARIMA(4,1,0)(0,0,0)[0] intercept   : AIC=-57047.210, Time=3.23 sec
+ ARIMA(5,1,0)(0,0,0)[0] intercept   : AIC=-57545.266, Time=5.51 sec
+ ARIMA(5,1,1)(0,0,0)[0] intercept   : AIC=-57089.926, Time=3.05 sec
+ ARIMA(4,1,1)(0,0,0)[0] intercept   : AIC=-56964.831, Time=3.35 sec
+ ARIMA(5,1,0)(0,0,0)[0]             : AIC=-57547.264, Time=1.31 sec
+ ARIMA(4,1,0)(0,0,0)[0]             : AIC=-57049.209, Time=1.20 sec
+ ARIMA(5,1,1)(0,0,0)[0]             : AIC=-57105.256, Time=1.21 sec
+ ARIMA(4,1,1)(0,0,0)[0]             : AIC=-56966.619, Time=2.17 sec
+
+Best model:  ARIMA(5,1,0)(0,0,0)[0]          
+Total fit time: 36.688 seconds
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                      y   No. Observations:                13984
+Model:               SARIMAX(5, 1, 0)   Log Likelihood               28779.632
+Date:                Wed, 27 Dec 2023   AIC                         -57547.264
+Time:                        21:58:48   BIC                         -57501.991
+Sample:                             0   HQIC                        -57532.191
+                              - 13984                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.6393      0.007     92.198      0.000       0.626       0.653
+ar.L2          0.0220      0.008      2.720      0.007       0.006       0.038
+ar.L3          0.0179      0.008      2.141      0.032       0.002       0.034
+ar.L4          0.0031      0.008      0.377      0.706      -0.013       0.019
+ar.L5         -0.1875      0.007    -25.994      0.000      -0.202      -0.173
+sigma2         0.0010   8.67e-06    110.088      0.000       0.001       0.001
+===================================================================================
+Ljung-Box (L1) (Q):                  48.19   Jarque-Bera (JB):              2253.86
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.51   Skew:                             0.06
+Prob(H) (two-sided):                  0.00   Kurtosis:                         4.96
+===================================================================================
