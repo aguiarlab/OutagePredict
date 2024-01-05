@@ -116,7 +116,7 @@ def create_model(optimizer='rmsprop', init='glorot_uniform',dropout_rate=0.1,los
   return model
 
 #Load data
-mydata = pd.read_csv('nassauC.csv',header=0)
+mydata = pd.read_csv('nas.csv',header=0)
 dataIn = mydata[mydata.columns[1:71]]
 # Merged Differenced Columns
 dateT = mydata[mydata.columns[0]]
