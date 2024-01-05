@@ -1,4 +1,4 @@
-#@title Grid search 5-fold CV
+#@title Grid search 5-fold C
 #Grid Search 5-fold cross validation via sklearn
 import keras
 from keras.models import Sequential
