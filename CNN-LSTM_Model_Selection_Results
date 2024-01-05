@@ -16,7 +16,7 @@ Loading python/3.10.5
 4  5.579980    0.0  6.87  2.15  302.300018  0.738352            0.0
 (1404, 36, 6) (1404, 1)
 (1404, 36, 6) (1404, 1)
-Best: -0.008657 using {'batch_size': 16, 'dropout_rate': 0.5, 'epochs': 60, 'init': 'normal', 'loss': 'huber', 'optimizer': 'sgd'}
+# Best: -0.008657 using {'batch_size': 16, 'dropout_rate': 0.5, 'epochs': 60, 'init': 'normal', 'loss': 'huber', 'optimizer': 'sgd'}
 -0.172023 (0.295651) with: {'batch_size': 16, 'dropout_rate': 0.1, 'epochs': 20, 'init': 'glorot_uniform', 'loss': 'mse', 'optimizer': 'rmsprop'}
 -0.098612 (0.143576) with: {'batch_size': 16, 'dropout_rate': 0.1, 'epochs': 20, 'init': 'glorot_uniform', 'loss': 'mse', 'optimizer': 'adam'}
 nan (nan) with: {'batch_size': 16, 'dropout_rate': 0.1, 'epochs': 20, 'init': 'glorot_uniform', 'loss': 'mse', 'optimizer': 'sgd'}
